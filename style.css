@@ -1,5 +1,4 @@
-
-/* Variables */
+\/* Variables */
 :root{
     --Dark-cyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
@@ -37,12 +36,12 @@ img{
     overflow: hidden;
 }
 
-#image1{
+.image1{
     display: block; /* show when desktop view*/
     width: 50%;
     object-fit: cover;
 }
-#image2{
+.image2{
     display: none; /* hide when desktop view*/
 }
 
@@ -59,7 +58,7 @@ img{
     letter-spacing: .5em;
 }
 
-.about .heading{
+h1{
     color: var(--Very-dark-blue);
     font-family: "Fraunces", serif;
     padding: 1rem 0;
@@ -87,6 +86,7 @@ img{
     color: hsl(228, 12%, 48%);
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
+    text-decoration: line-through;
     padding-left: 1rem;
 }
 

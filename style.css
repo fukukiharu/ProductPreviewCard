@@ -23,39 +23,46 @@ img{
 }
 
 /* Main */
-.container{
+.body{
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     background-color: var(--White);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 600px;
+    height: 450px;
+    display: flex;
     border-radius: .5rem;
     margin: 10rem auto;
-    height: auto;
-    width: 40rem;
-    overflow: hidden;
 }
 
 .image1{
     display: block; /* show when desktop view*/
-    width: 50%;
+    width: 300px;
+    height: 450px;
     object-fit: cover;
+    border-radius: .5rem 0 0 .5rem;
 }
 .image2{
     display: none; /* hide when desktop view*/
 }
 
-.about{
-    display: block;
-    align-items: center;
+.content{
+    background-color: white;
+    border-radius: 0 .5rem .5rem 0;
     padding: 2rem;
-    margin: auto;
+    width: 300px;
+    height: 450px;
 }
 
-.about .subheading{
+p{
     color: var(--Dark-grayish-blue);
     font-family: "Montserrat", sans-serif;
-    letter-spacing: .5em;
 }
 
 h1{
@@ -64,25 +71,25 @@ h1{
     padding: 1rem 0;
 }
 
-.about .description{
+.description{
     color:var(--Dark-grayish-blue);
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 2;
 }
 
-.about .price{
+.price{
     padding: 1rem 0px;
     display: flex;
     align-items: center;
 }
 
-.about .price .discount{
+.discount{
     color: hsl(158, 36%, 37%);
     font-family: "Fraunces", serif;
 }
 
-.about .original{
+.original{
     color: hsl(228, 12%, 48%);
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -90,7 +97,7 @@ h1{
     padding-left: 1rem;
 }
 
-.about button{
+button{
     display: block;
     align-items: center;
     margin: 1rem auto;
@@ -104,7 +111,7 @@ h1{
     padding: .7rem;
     width: 90%;
 }
-.about button .cart{
+.cart{
     height: .6rem;
     width:auto;
     padding-right: .5rem;
@@ -133,8 +140,10 @@ button:hover{
         display: none; /* hide when desktop view*/
     }   
     .image2{
-        display: block; /* show when mobile view*/
-        width: 100%;
+        display: block; /* show when desktop view*/
+        width: auto;
+        height: 50%;
         object-fit: cover;
+        border-radius: .5rem 0;
     }
 }
